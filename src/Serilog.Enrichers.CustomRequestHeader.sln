@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Enrichers.CustomRequestHeader", "Serilog.Enrichers.CustomRequestHeader\Serilog.Enrichers.CustomRequestHeader.csproj", "{BE4BE067-CDB8-4E0A-A07C-906EFB0EDEE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE4BE067-CDB8-4E0A-A07C-906EFB0EDEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4BE067-CDB8-4E0A-A07C-906EFB0EDEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4BE067-CDB8-4E0A-A07C-906EFB0EDEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4BE067-CDB8-4E0A-A07C-906EFB0EDEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {920A5F1E-066C-4E99-AB7A-F69545189313}
+	EndGlobalSection
+EndGlobal
