@@ -29,13 +29,16 @@ namespace Serilog.Enrichers
                 return;
 
             var customHeaderValue = GetCustomHeaderValue();
-            var logEventProperty = new LogEventProperty(_propertyName, new ScalarValue(customHeaderValue));
-            logEvent.AddOrUpdateProperty(logEventProperty);
+            if (!string.IsNullOrEmpty(customHeaderValue))
+            {
+                var logEventProperty = new LogEventProperty(_propertyName, new ScalarValue(customHeaderValue));
+                logEvent.AddOrUpdateProperty(logEventProperty);
+            }
         }
 
         private string GetCustomHeaderValue()
         {
-            var header = string.Empty;
+            string header = null;
             if (_contextAccessor.HttpContext.Request.Headers.TryGetValue(_headerKey, out var values))
                 header = values.FirstOrDefault();
             else if (_contextAccessor.HttpContext.Response.Headers.TryGetValue(_headerKey, out values))
